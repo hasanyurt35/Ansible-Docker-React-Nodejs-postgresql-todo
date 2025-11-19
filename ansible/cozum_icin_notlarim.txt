@@ -1,0 +1,13 @@
+- ansible-inventory --graph  --> bu komut calisiyorsa dynamic inventory kullanabilmek icin gerekli ayarlarin yapildigi anlasilir. 
+
+
+- dynamic inventory icin boto3 ve botocore yüklü olmali.
+
+- dynamic inventory icin ec2 access role tanimli olmali control node'a.
+
+
+- terraform u calistirmadan önce ansible.cfg dosyasinda key file yerini güncellemesen de terraform bütün node ve paketleri kuracaktir. Ancak control node icerisinde 
+
+ansible all -m ping 
+
+komutunu calistirdiginde node'lar ile baglanti kurulamaz. Bu durumda ansible.cfg dosyasini güncelle, sorun cözülür.

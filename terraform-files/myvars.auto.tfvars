@@ -1,0 +1,11 @@
+//aws_access_key = ""
+//aws_secret_key = ""
+myami = "ami-0dfc569a8686b9320"
+mykey = "clarusway"
+tags = ["postgresql", "nodejs", "react"]
+instancetype = "t3a.small"
+controlinstancetype = "t3a.medium"
+num = 3
+region = "us-east-1"
+mysecgr = "ansible-project-207-sec-gr"
+user = "clarusway"

@@ -82,7 +82,7 @@
 
     - name: Reset ssh connection to pick up docker group
       ansible.builtin.meta: reset_connection
-
+      
     - name: Wait for Docker daemon to be ready
       ansible.builtin.wait_for:
         path: /var/run/docker.sock

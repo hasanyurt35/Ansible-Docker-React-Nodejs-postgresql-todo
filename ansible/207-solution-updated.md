@@ -933,7 +933,7 @@ ansible-playbook docker_react.yml
         env:
           POSTGRES_PASSWORD: "{{ password }}"
         volumes:
-          - /db-data:/var/lib/postgresql/data
+          - /db-data:/var/lib/postgresql/18/main
       register: container_info
 
     - name: print the container info
@@ -1202,7 +1202,7 @@ ansible-galaxy init react
         env:
           POSTGRES_PASSWORD: "Pp123456789"
         volumes:
-          - /db-data:/var/lib/postgresql/data
+          - /db-data:/var/lib/postgresql/18/main
       register: container_info
     
     - name: print the container info
